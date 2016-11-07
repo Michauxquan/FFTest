@@ -1,0 +1,9 @@
+D:\Michaux\FFTest\FFmpeg\FFmpeg\bin\Debug\FFmpeg.exe.config
+D:\Michaux\FFTest\FFmpeg\FFmpeg\bin\Debug\FFmpeg.exe
+D:\Michaux\FFTest\FFmpeg\FFmpeg\bin\Debug\FFmpeg.pdb
+D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.Form1.resources
+D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.Properties.Resources.resources
+D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csproj.GenerateResource.Cache
+D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.exe
+D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.pdb
+D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csprojResolveAssemblyReference.cache
