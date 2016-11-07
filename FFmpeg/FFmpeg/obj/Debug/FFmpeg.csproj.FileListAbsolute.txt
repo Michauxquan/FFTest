@@ -7,3 +7,12 @@ D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csproj.GenerateResource.Cache
 D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.exe
 D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.pdb
 D:\Michaux\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csprojResolveAssemblyReference.cache
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\bin\Debug\FFmpeg.exe.config
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.exe
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.pdb
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\bin\Debug\FFmpeg.exe
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\bin\Debug\FFmpeg.pdb
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csprojResolveAssemblyReference.cache
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.Form1.resources
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.Properties.Resources.resources
+G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csproj.GenerateResource.Cache

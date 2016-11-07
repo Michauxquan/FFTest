@@ -18,7 +18,8 @@ namespace FFmpeg
         {
             InitializeComponent();
         }
-
+        // private string url = "D:/Michaux";
+        private string url = "G:/MichauxPro/";
         private void btn1_Click(object sender, EventArgs e)
         { 
             folder1.Description = "请选择文件夹";
@@ -38,7 +39,7 @@ namespace FFmpeg
             }
             FFmpegPath = "C:/ffmpeg/bin/ffmpeg.exe";
             para =
-                "-i D:/Michaux/FFTest/rain.mp4 -i D:/Michaux/FFTest/egg.png -filter_complex \"overlay=10:10\" -b 1024k -acodec copy D:/Michaux/FFTest/aaa.mp4";
+                "-i " + url + "FFTest/rain.mp4 -i " + url + "/FFTest/egg.png -filter_complex \"overlay=10:10\" -b 1024k -acodec copy "+url+"FFTest/aaa.mp4";
             this.text2.Text= this.text2.Text+RunProcess(para);
         }
 
@@ -105,7 +106,7 @@ namespace FFmpeg
            // string para = "-i D:/Michaux/FFTest/aaa.mp4 -vf subtitles=rain.srt output.mp4";
 
 
-            string para = "-i D:/Michaux/FFTest/rain.mp4 -vf \"subtitles='D\\://Michaux//FFTest//rain.srt'\" output.mp4";
+            string para = "-i " + url + "FFTest/rain.mp4 -vf \"subtitles='D\\://Michaux//FFTest//rain.srt'\" output.mp4";
             Console.WriteLine(para);
            // string para = "-i D:/Michaux/FFTest/aaa.mp4 -f srt -i D:/Michaux/FFTest/rain.srt -c:v copy -c:a  -c:s mov_text copy zimu.mp4";
 
@@ -124,30 +125,32 @@ namespace FFmpeg
         private void btn4_Click(object sender, EventArgs e)
         { 
             FFmpegPath = "C:/ffmpeg/bin/ffplay.exe";
-            string para = " -i D:/Michaux/FFTest/rain.mp4 -vf drawtext=\"fontfile=arial.ttf:text='Michaux Test':x=w-t*50:fontcolor=darkorange:fontsize=30\"  dongtaizimu.mp4";
+            string para = " -i " + url + "FFTest/rain.mp4 -vf drawtext=\"fontfile=arial.ttf:text='Michaux Test':x=w-t*50:fontcolor=darkorange:fontsize=30\"  dongtaizimu.mp4";
             this.text2.Text = this.text2.Text + RunProcess(para); 
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
             FFmpegPath = "C:/ffmpeg/bin/ffmpeg.exe";
-            string para = " -y -i D:/Michaux/FFTest/img.mp4  -r 15 -q:v 2 D:/Michaux/FFTest/model/model1/image%d.jpg";
+            string para = " -y -i " + url + "FFTest/img.mp4  -r 15 -q:v 2 " + url + "FFTest/model/model1/image%d.jpg";
             this.text2.Text = this.text2.Text + RunProcess(para); 
         }
 
         private void btn6_Click(object sender, EventArgs e)
         { 
             FFmpegPath = "C:/ffmpeg/bin/ffmpeg.exe";
-            string para = " -y -f image2 -i D:/Michaux/FFTest/model/model1/image%d.jpg -vcodec libx264 -r 24  D:/Michaux/FFTest/imgp4.mp4";
+            string para = " -y -f image2 -i " + url + "FFTest/model/model1/image%d.jpg -vcodec libx264 -r 24  "+url+"FFTest/imgp4.mp4";
             this.text2.Text = this.text2.Text + RunProcess(para); 
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
 
-          //  overlay=x=main_w-overlay_w-10:y=main_h-overlay_h-10
+          //  overlay=x=main_w-overlay_w-10:y=main_h-overlay_h-10 
+            //-vf transpose=1
             FFmpegPath = "C:/ffmpeg/bin/ffmpeg.exe";
-            string para = " -y -i D:/Michaux/FFTest/model/model1/image1.jpg  -i D:/Michaux/FFTest/ali.jpg -filter_complex \"overlay=122:87\"   D:/Michaux/FFTest/img1.jpg";
+            // -i " + url + "FFTest/ali.jpg -filter_complex \"overlay=122:87\" -vf transpose=1  
+            string para = " -y -i " + url + "FFTest/model/model1/image1.jpg -vf transpose=-0.1 " + url + "FFTest/img1.jpg";
             this.text2.Text = this.text2.Text + RunProcess(para); 
         }
         
