@@ -18,8 +18,8 @@ namespace FFmpeg
         {
             InitializeComponent();
         }
-        // private string url = "D:/Michaux";
-        private string url = "G:/MichauxPro/";
+         private string url = "D:/MichauxPro/";
+       // private string url = "G:/MichauxPro/";
         private void btn1_Click(object sender, EventArgs e)
         { 
             folder1.Description = "请选择文件夹";
@@ -106,7 +106,7 @@ namespace FFmpeg
            // string para = "-i D:/Michaux/FFTest/aaa.mp4 -vf subtitles=rain.srt output.mp4";
 
 
-            string para = "-i " + url + "FFTest/rain.mp4 -vf \"subtitles='D\\://Michaux//FFTest//rain.srt'\" output.mp4";
+            string para = "-i " + url + "FFTest/rain.mp4 -vf \"subtitles='D\\://MichauxPro//FFTest//rain.srt'\" output.mp4";
             Console.WriteLine(para);
            // string para = "-i D:/Michaux/FFTest/aaa.mp4 -f srt -i D:/Michaux/FFTest/rain.srt -c:v copy -c:a  -c:s mov_text copy zimu.mp4";
 
@@ -149,8 +149,14 @@ namespace FFmpeg
           //  overlay=x=main_w-overlay_w-10:y=main_h-overlay_h-10 
             //-vf transpose=1
             FFmpegPath = "C:/ffmpeg/bin/ffmpeg.exe";
-            // -i " + url + "FFTest/ali.jpg -filter_complex \"overlay=122:87\" -vf transpose=1  
-            string para = " -y -i " + url + "FFTest/model/model1/image1.jpg -vf transpose=-0.1 " + url + "FFTest/img1.jpg";
+            // -i " + url + "FFTest/ali.jpg -filter_complex \"overlay=122:87\" -vf transpose=1  -vf scale=198:198:gamma=1   \"smptebars=size=121:86:rate=10\" 
+            string para = " -y -i " + url + "FFTest/ali.jpg -vf \"rotate=-10*PI/180,scale=176:218\" " + url + "FFTest/ali1.png";
+            ///./ffmpeg -i ~/fuck.mp4 -i ~/1.mp4 -shortest -filter_complex "[1:v]chromakey=0x70de77:0.1:0.2[ckout];[0:v][ckout]overlay[out]" -map "[out]" output.mp4
+            this.text2.Text = this.text2.Text + RunProcess(para); 
+            para = " -y -i " + url +"FFTest/ali1.png  -vf chromakey=0x000000 " +url + "FFTest/ali1.png ";
+
+            this.text2.Text = this.text2.Text + RunProcess(para);
+            para = " -y -i " + url + "FFTest/model/model1/image1.jpg -i " + url + "FFTest/ali1.png -filter_complex \"overlay=121:86\"  " + url + "FFTest/img1.jpg";
             this.text2.Text = this.text2.Text + RunProcess(para); 
         }
         

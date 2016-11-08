@@ -16,6 +16,3 @@ G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csprojResolveAssemblyReferen
 G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.Form1.resources
 G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.Properties.Resources.resources
 G:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.csproj.GenerateResource.Cache
-D:\MichauxPro\FFTest\FFmpeg\FFmpeg\bin\Debug\FFmpeg.exe.config
-D:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.exe
-D:\MichauxPro\FFTest\FFmpeg\FFmpeg\obj\Debug\FFmpeg.pdb
